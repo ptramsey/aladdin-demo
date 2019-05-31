@@ -4,7 +4,7 @@ apiVersion: v1
 metadata:
   name: {{ .Chart.Name }}-nfs-volume-claim
 spec:
-  storageClassName: standard
+  storageClassName: hostpath
   accessModes:
     - ReadWriteMany
   resources:

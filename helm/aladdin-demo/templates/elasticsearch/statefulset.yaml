@@ -95,7 +95,7 @@ spec:
     spec:
       # Allow one node to read and write at a time
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: standard
+      storageClassName: hostpath
       resources:
         requests:
           storage: {{ .Values.elasticsearch.storage }}
